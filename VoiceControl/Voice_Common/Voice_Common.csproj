@@ -7,8 +7,8 @@
     <ProjectGuid>{25047145-8C97-4F46-B4A3-C460E399F747}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
+    <RootNamespace>VoiceControlCommon</RootNamespace>
+    <AssemblyName>VoiceControlCommon</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

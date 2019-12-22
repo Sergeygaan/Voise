@@ -38,23 +38,23 @@ namespace VoiceControlRecognition
 
     public class LoadCommand
     {
-        private string fileName = @"Command.xml";
+        private string _fileName = @"Command.xml";
         public List<LoadArrayCommands> _arrayCommands = new List<LoadArrayCommands>();
 
         public List<LoadArrayCommands> OpenRead()
         {
             XmlNode attr = null;
 
-            if (!File.Exists(fileName))
+            if (!File.Exists(_fileName))
             {
-                using (StreamWriter textFile = new StreamWriter(fileName, false, Encoding.UTF8))
+                using (StreamWriter textFile = new StreamWriter(_fileName, false, Encoding.UTF8))
                 {
                     textFile.WriteLine(ProjectSettings());
                 }
             }
 
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(fileName);
+            xDoc.Load(_fileName);
 
             // получим корневой элемент
             XmlElement xRoot = xDoc.DocumentElement;

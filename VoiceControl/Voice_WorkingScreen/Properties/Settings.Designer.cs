@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VoiceControl.Properties
+namespace WorkingScreen.Properties
 {
 
 
