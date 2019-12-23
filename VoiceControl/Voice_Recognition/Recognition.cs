@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Forms;
+using WorkingScreen;
 
 namespace VoiceControlRecognition
 {
@@ -27,7 +28,7 @@ namespace VoiceControlRecognition
         }
 
         /// <summary>
-        /// Переменная, хранящая значение денег персонажа
+        /// Переменная, хранящая текст лога
         /// </summary>
         public static string TextLog
         {
@@ -61,7 +62,7 @@ namespace VoiceControlRecognition
         }
 
         /// <summary>
-        /// Переменная, хранящая значение денег персонажа
+        /// Переменная, хранящая значение команды
         /// </summary>
         public static string Command
         {

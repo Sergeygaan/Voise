@@ -1,6 +1,6 @@
-﻿using ProjectSettings;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
+using VoiceControlCommon;
 
 namespace WorkingScreen
 {

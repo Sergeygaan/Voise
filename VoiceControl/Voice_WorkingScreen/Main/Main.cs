@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using Command;
-using ProjectSettings;
 
 namespace WorkingScreen
 {
@@ -60,26 +59,26 @@ namespace WorkingScreen
 
         private void StartingDelimitationZone()
         {
-            if(ProjectSettingsMain.Zone_TracingChangeDraw)
-            {
-                //Отменить все
-                commands[8].Act(2);
+            //if(ProjectSettingsMain.Zone_TracingChangeDraw)
+            //{
+            //    //Отменить все
+            //    commands[8].Act(2);
 
-                _workObject.listRegionRectangle.Clear();
+            //    _workObject.listRegionRectangle.Clear();
 
-                ProjectSettingsMain.Zone_TracingChangeDraw = false;
-            }
+            //    ProjectSettingsMain.Zone_TracingChangeDraw = false;
+            //}
 
             if (_workObject.listRegionRectangle.Count == 0)
             {
-                if (ProjectSettingsMain.Zone_DrawMethod == 0)
-                {
+                //if (ProjectSettingsMain.Zone_DrawMethod == 0)
+                //{
                     Drawing.MethodMain(_workObject, _widthFrom, _heightForm);
-                }
-                else
-                {
-                    Drawing.MethodAlternative(_workObject, ProjectSettingsMain.Zone_CurrentList);
-                }
+                //}
+                //else
+                //{
+                //    Drawing.MethodAlternative(_workObject, ProjectSettingsMain.Zone_CurrentList);
+                //}
             }
 
             GC.Collect();

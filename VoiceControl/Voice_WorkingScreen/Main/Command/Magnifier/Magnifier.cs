@@ -1,6 +1,6 @@
-﻿using ProjectSettings;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using VoiceControlCommon;
 
 namespace Command.Magnif
 {

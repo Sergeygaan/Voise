@@ -54,6 +54,10 @@
       <Project>{9645caf5-b91e-4c40-9f4b-1044f9265326}</Project>
       <Name>Voice_Recognition</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Voice_WorkingScreen\WorkingScreen.csproj">
+      <Project>{83355FC0-0486-4FE5-92D6-324FB17DFBB9}</Project>
+      <Name>WorkingScreen</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

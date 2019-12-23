@@ -71,8 +71,6 @@ namespace WorkingScreen
             RefreshForm();
 
             _mainObject.ApplyCommand(indexCommand, number);
-
-            Invalidate();
         }
 
         public void RefreshForm()

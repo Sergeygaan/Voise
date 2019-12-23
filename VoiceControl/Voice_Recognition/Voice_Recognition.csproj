@@ -52,5 +52,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Voice_WorkingScreen\WorkingScreen.csproj">
+      <Project>{83355FC0-0486-4FE5-92D6-324FB17DFBB9}</Project>
+      <Name>WorkingScreen</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,18 +1,25 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 using VoiceControlCommon;
 using VoiceControlRecognition;
+using WorkingScreen;
 
 namespace VoiceControlCore
 {
     public class ControlCore
     {
         private ListView _listView;
+        private ScreenDelineation _screenDelineation;
 
         public ControlCore(ListView listView)
         {
             _listView = listView;
+
+            _screenDelineation = new ScreenDelineation();
+            _screenDelineation.Show();
 
             Recognition voiceRecognition = new Recognition("ru-RU");
             Recognition.PropertyTextLog += new PropertyChangedEventHandler(AppendLine);
@@ -25,6 +32,7 @@ namespace VoiceControlCore
         private void Command(object sender, PropertyChangedEventArgs even)
         {
             var command = ParsingText.Parsing(even.PropertyName);
+            _screenDelineation.ApplyCommand(Convert.ToInt32(command[0]), Convert.ToInt32(command[1]));
         }
 
         /// <summary>

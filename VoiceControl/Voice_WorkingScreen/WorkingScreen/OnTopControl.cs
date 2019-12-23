@@ -39,8 +39,10 @@ namespace WorkingScreen
                 }
                 catch (ThreadAbortException) { /*На аборте тихо выключаемся*/ }
                 catch { /*А вот эту ошибку надо бы мониторить в подсистеме, поскольку это вылет из потока*/ }
-            });
-            _thread.IsBackground = true;
+            })
+            {
+                IsBackground = true
+            };
             _thread.Start();
         }
 
